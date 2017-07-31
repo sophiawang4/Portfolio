@@ -4,13 +4,8 @@
 /* You might want to try something fancier: */
 /* less: http://lesscss.org/ */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 25px;
+.party{
+  color: purple;
 }
 
 h1 {
@@ -46,17 +41,28 @@ button {
   margin-bottom: 40px;
 }
 
-#greeting{
-  color:red
-  }
-
-
 button:hover {
   background-color: yellow;
 }
 
 button:active {
   box-shadow: none;
+}
+
+div#box1{
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+
+div#box2{
+  background-color: pink;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 10px;
 }
 
 div#box3{
