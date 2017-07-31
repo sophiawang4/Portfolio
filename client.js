@@ -1,3 +1,4 @@
+
 var box1 = document.getElementById("box1");
 box1.addEventListener("mouseenter", function(){
   box1.style.backgroundColor = "pink";
@@ -17,4 +18,3 @@ box3.addEventListener("mouseenter", function(){
 box3.addEventListener("mouseout", function(){
   box3.style.backgroundColor = "orange";
 });
-
