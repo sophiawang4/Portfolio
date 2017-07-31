@@ -115,10 +115,6 @@ button {
   margin-bottom: 40px;
 }
 
-#greeting{
-  color:red
-  }
-
 
 button:hover {
   background-color: yellow;
