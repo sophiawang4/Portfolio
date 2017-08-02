@@ -1,48 +1,88 @@
 
-// server.js
-// where your node app starts
+/* styles */
+/* called by your view template */
 
-// init project
-var express = require('express');
-var app = express();
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
+* {
+  box-sizing: border-box;
+}
 
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
 
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
-});
+#greeting{
+  color: red;
+}
 
-app.get("/dreams", function (request, response) {
-  response.send(dreams);
-});
+.party{
+  color: purple;
+}
 
-// could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
-app.post("/dreams", function (request, response) {
-  dreams.push(request.query.dream);
-  response.sendStatus(200);
-});
+h1 {
+  font-weight: bold;
+  color: pink;
+  text-align: center;
+}
 
-// Simple in-memory store for now
-var dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
-];
+h2{
+  text-align: center;
+}
 
-// listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
-$(function() {
-	$( ".box" ).draggable();
-});
+.bold {
+  font-weight: bold;
+}
 
+p {
+  max-width: 600px;
+}
 
+.centered{
+  text-align: center
+}
 
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
+button:hover {
+  background-color: yellow;
+}
 
+button:active {
+  box-shadow: none;
+}
+
+div#box1{
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+
+div#box2{
+  background-color: pink;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+
+div#box3{
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
