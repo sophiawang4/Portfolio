@@ -1,3 +1,13 @@
+<h2 id="header">Text</h2>
+#header{
+  position: absolute;
+  z-index: 1000;
+  top: 200px;
+  left: 200px;
+}
+
+
+
 // client-side js
 // run by the browser each time your view template is loaded
 
